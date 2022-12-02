@@ -1,0 +1,45 @@
+POST http://localhost:3003/users
+Content-Type: application/json
+
+{
+    "name": "Giovana Inez Vieira",
+    "email": "gioivieira@gmail.com",
+    "password": "12345678"
+}
+
+###
+
+GET http://localhost:3003/users
+Content-Type: application/json
+
+###
+
+POST http://localhost:3003/products
+Content-Type: application/json
+
+{
+    "name": "Box Fazendo Meu Filme",
+    "price": "234.90",
+    "imageUrl": "https://images-americanas.b2w.io/produtos/1748654055/imagens/livro-box-serie-fazendo-meu-filme-capas-novas-serie-completa/1748654055_1_xlarge.jpg"
+}
+
+###
+
+GET http://localhost:3003/products
+Content-Type: application/json
+
+### 
+
+POST http://localhost:3003/purchases
+Content-Type: application/json
+
+{
+    "userId": "1669995633180",
+    "productId": "1669997281709",
+    "quantity": 0
+}
+
+###
+
+GET http://localhost:3003/users/1669995633180/purchases
+Content-Type: application/json
