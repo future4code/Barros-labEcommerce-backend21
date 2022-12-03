@@ -4,13 +4,13 @@ import connection from '../dataBase/connection'
 const user = async (id: number, name: string, email: string, password: string) => {
     await connection("labecommerce_users").insert({
         id: id.toString(),
-        name,
+        username: name,
         email,
         password
     })
 }
 
-const userRegistration = async (req: Request, res: Response): Promise<void> =>{
+const usersRegistration = async (req: Request, res: Response): Promise<void> =>{
 
     const {name, email, password} = req.body
     const id = Date.now()
@@ -49,4 +49,4 @@ const userRegistration = async (req: Request, res: Response): Promise<void> =>{
     }
 }
 
-export default userRegistration;
+export default usersRegistration;
