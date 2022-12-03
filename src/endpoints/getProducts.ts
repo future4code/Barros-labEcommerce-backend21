@@ -4,7 +4,7 @@ import connection from "../dataBase/connection"
 const getProducts = async (req: Request, res: Response): Promise<void> =>{
 
     let productName = req.query.product_name as string
-    let chooseTheOrder = req.query.productsOrder as string
+    let chooseTheOrder = req.query.products_order as string
     let name = '%'
     let order;
     let errorCode = 400

@@ -9,11 +9,6 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3003/users
-Content-Type: application/json
-
-###
-
 POST http://localhost:3003/products
 Content-Type: application/json
 
@@ -25,11 +20,6 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3003/products?product_name=Box &productsOrder=desc
-Content-Type: application/json
-
-### 
-
 POST http://localhost:3003/purchases
 Content-Type: application/json
 
@@ -38,6 +28,16 @@ Content-Type: application/json
     "productId": "1669997197595",
     "quantity": 1
 }
+
+### 
+
+GET http://localhost:3003/users
+Content-Type: application/json
+
+###
+
+GET http://localhost:3003/products?product_name=Box &products_order=desc
+Content-Type: application/json
 
 ###
 
