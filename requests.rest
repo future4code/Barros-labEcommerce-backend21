@@ -2,8 +2,8 @@ POST http://localhost:3003/users
 Content-Type: application/json
 
 {
-    "name": "Giovana Inez Vieira",
-    "email": "gioivieira@gmail.com",
+    "name": "Eloisa Avelino da Silva",
+    "email": "eloisa@gmail.com",
     "password": "12345678"
 }
 
@@ -25,7 +25,7 @@ Content-Type: application/json
 
 ###
 
-GET http://localhost:3003/products
+GET http://localhost:3003/products?product_name=Box &productsOrder=desc
 Content-Type: application/json
 
 ### 
@@ -34,9 +34,9 @@ POST http://localhost:3003/purchases
 Content-Type: application/json
 
 {
-    "userId": "1669995633180",
-    "productId": "1669997281709",
-    "quantity": 0
+    "userId": "1670070431709",
+    "productId": "1669997197595",
+    "quantity": 1
 }
 
 ###
