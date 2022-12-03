@@ -1,4 +1,4 @@
-POST http://localhost:3003/users
+POST http://localhost:3306/users
 Content-Type: application/json
 
 {
@@ -9,7 +9,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3003/products
+POST http://localhost:3306/products
 Content-Type: application/json
 
 {
@@ -20,7 +20,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3003/purchases
+POST http://localhost:3306/purchases
 Content-Type: application/json
 
 {
@@ -31,15 +31,15 @@ Content-Type: application/json
 
 ### 
 
-GET http://localhost:3003/users
+GET http://localhost:3306/users
 Content-Type: application/json
 
 ###
 
-GET http://localhost:3003/products?product_name=Box &products_order=desc
+GET http://localhost:3306/products?product_name=Box &products_order=desc
 Content-Type: application/json
 
 ###
 
-GET http://localhost:3003/users/1669995633180/purchases
+GET http://localhost:3306/users/1669995633180/purchases
 Content-Type: application/json
