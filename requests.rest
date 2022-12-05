@@ -1,4 +1,4 @@
-POST http://localhost:3306/users
+POST https://labecommerce-je7x.onrender.com/users
 Content-Type: application/json
 
 {
@@ -9,7 +9,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3306/products
+POST https://labecommerce-je7x.onrender.com/products
 Content-Type: application/json
 
 {
@@ -20,7 +20,7 @@ Content-Type: application/json
 
 ###
 
-POST http://localhost:3306/purchases
+POST https://labecommerce-je7x.onrender.com/purchases
 Content-Type: application/json
 
 {
@@ -31,15 +31,15 @@ Content-Type: application/json
 
 ### 
 
-GET http://localhost:3306/users
+GET https://labecommerce-je7x.onrender.com/users
 Content-Type: application/json
 
 ###
 
-GET http://localhost:3306/products?product_name=Box &products_order=desc
+GET https://labecommerce-je7x.onrender.com/products?product_name=Box &products_order=desc
 Content-Type: application/json
 
 ###
 
-GET http://localhost:3306/users/1669995633180/purchases
+GET https://labecommerce-je7x.onrender.com/users/1669995633180/purchases
 Content-Type: application/json
